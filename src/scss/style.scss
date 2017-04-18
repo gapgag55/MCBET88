@@ -1,0 +1,99 @@
+@import 'variable';
+
+// @import 'font-face';
+// @import 'default';
+// @import 'index';
+// @import 'category';
+// @import 'register';
+
+
+header {
+    margin-bottom: 20px;
+
+    .right {
+        text-align: right;
+        padding-top: 30px;
+        
+        p {
+            font-size: 25px;
+
+            &:first-child {
+                font-size: 32px;
+            }
+        }
+        span {
+            color: #FFAE00;
+            font-family: 'psl_similanyaextra_proitalic';
+        }
+    }
+
+    nav {
+        background: linear-gradient(#C62222, #580B0B);
+        background: #c62222; /* Old browsers */
+        background: -moz-linear-gradient(top, #c62222 0%, #580b0b 51%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, #c62222 0%,#580b0b 51%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, #c62222 0%,#580b0b 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c62222', endColorstr='#580b0b',GradientType=0 ); /* IE6-9 */
+        border: 1px solid #000;
+        
+        ul {
+            padding: 10px 0;
+            li {
+                display: inline-block;
+                text-align: center;
+                
+                a {
+                    color: #FFEA00;
+                    margin-right: 20px;
+                    font-size: 22px;
+
+                    &:hover {
+                        color: #ffffff;
+                    }
+                }      
+            }
+        }
+    }
+}
+
+section {
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    position: relative;
+    color: #ffffff;
+
+    .contents > a {
+        display: block;
+        width: 100%;
+    }
+
+    .details {
+        h1, p {
+            color: #ffffff;
+        }
+    }
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #151515;
+    color: #ffffff;
+
+    a {
+        color: #ffffff;
+    }
+
+    ul {
+        padding-top: 20px;
+
+        li {
+            display: block;
+            text-indent: 10px;
+
+            &:before {
+                content: '- ';
+            }
+        }
+    }
+}

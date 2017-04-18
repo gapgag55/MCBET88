@@ -1,0 +1,19 @@
+@import 'variable';
+
+
+.single {
+     & > p {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #ffffff;
+        display: inline-block;
+    }
+
+    .single-title {
+        margin-bottom: 40px;
+    }
+
+    img {
+        display: block;
+        margin: 20px auto;
+    }
+}

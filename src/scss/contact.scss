@@ -1,0 +1,18 @@
+@import 'variable';
+
+
+.contact {
+    margin-bottom: 100px;
+
+    .box {
+        p {
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        span {
+            color: $color-font;
+            font-size: 35px;
+        }
+    }
+}
