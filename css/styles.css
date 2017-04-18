@@ -93,7 +93,8 @@ a {
 
 .wrapper {
   width: 900px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  max-width: 100%; }
 
 .background-brown {
   background-color: #8B0A07 !important;
@@ -255,6 +256,10 @@ a {
           flex-direction: column;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+
+@media screen and (max-width: 768px) {
+  .blog-category p {
+    padding: 20px; } }
 
 .single > p {
   margin-bottom: 30px;
