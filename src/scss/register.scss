@@ -17,7 +17,13 @@
         color: $color-font;
 
         .bg {
-            height: 100px;
+            height: 85px;
+            margin: 20px 0;
+
+            &.small {
+                height: 50px;
+                margin: 0;
+            }
         }
 
         h5 {

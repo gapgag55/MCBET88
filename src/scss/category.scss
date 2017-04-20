@@ -1,14 +1,28 @@
 @import 'variable';
 
 .category {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: inherit;
 
     & > p {
         margin-bottom: 30px;
         border-bottom: 1px solid #ffffff;
         display: inline-block;
+        position: relative;
+        z-index: 2;
     }
 
+    & > .bg {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(25%, -50%);
+        background-size: contain;
+        z-index: 1;
+    }
 
     .contents {
         justify-content: space-around;

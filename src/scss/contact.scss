@@ -3,6 +3,16 @@
 
 .contact {
     margin-bottom: 100px;
+    position: relative;
+
+    .bg {
+        width: 400px;
+        height: 700px;
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        background-size: contain;
+    }
 
     .box {
         p {
@@ -13,6 +23,10 @@
         span {
             color: $color-font;
             font-size: 35px;
+        }
+
+        img {
+            margin: 20px 0;
         }
     }
 }
