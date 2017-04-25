@@ -117,7 +117,7 @@
        }
     }
 
-    @media screen and (min-width: $mobile-min-width) {
+    @media screen and (min-width: $mobile-min-width) and (max-width: $mobile-width) {
         .box-heading {
             font-size: 35px;
         }

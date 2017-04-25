@@ -467,7 +467,7 @@ img {
     .way-to-website .is-mobile .column {
       width: 100% !important; } }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) and (max-width: 1000px) {
   .introduction h1 {
     font-size: 30px; }
   .introduction p {
@@ -557,15 +557,11 @@ img {
           font-size: 25px !important; }
         .box .is-mobile .column p {
           font-size: 22px !important; } }
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 800px) and (max-width: 1000px) {
     .box .box-heading {
       font-size: 35px; }
     .box p {
       font-size: 25px !important; } }
-
-@media screen and (max-width: 768px) {
-  .blog-category p {
-    padding: 20px; } }
 
 .single-content {
   position: relative;

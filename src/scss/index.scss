@@ -309,7 +309,7 @@
     }
 }
 
-@media screen and (min-width: $mobile-min-width) {
+@media screen and (min-width: $mobile-min-width) and (max-width: $mobile-width) {
     .introduction {
         h1 {
             font-size: 30px;
