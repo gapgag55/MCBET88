@@ -166,6 +166,10 @@ body {
   font-family: 'psl_similanyaextra_proregular';
   color: #ffffff;
   font-size: 20px; }
+  body.fixed {
+    position: fixed;
+    top: 0;
+    left: 0; }
 
 h1, h4, h5, p {
   line-height: 1; }
