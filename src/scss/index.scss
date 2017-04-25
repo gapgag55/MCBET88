@@ -4,9 +4,25 @@
     .bg {
         width: 100%;
         height: 400px;
+    
+        @media screen and (max-width: $mobile-width) {
+            height: 50vw;
+        }
     }
     p {
         color: $color-font;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        padding: 0;
+
+        h1 {
+            font-size: 25px;    
+        }
+
+        p {
+            font-size: 18px;
+        }
     }
 }
 
@@ -30,6 +46,28 @@
         margin-top: 10px;
         text-align: center;
     }
+
+    @media screen and (max-width: $mobile-width) {
+        background-color: #8B0A07 !important;
+        margin: 0;
+
+        .bg {
+            height: 10vh;    
+        }
+
+        .column {
+            width: 50%;
+            flex: inherit;
+
+            span {
+                display: none;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+    }
 }
 
 .register {
@@ -37,12 +75,18 @@
 
     h4 {
         font-size: 40px;
+
+        @media screen and (max-width: $mobile-width) {
+            font-size: 25px;
+            text-align: center;
+        }
     }
     
     ul {
 
         li {
             font-size: 26px;
+            line-height: 1;
 
             span {
                 font-size: 40px;
@@ -54,6 +98,7 @@
         padding-bottom: 0;
         .bg {
             height: 150px;
+            background-position: right;
         }
 
         .columns:not(:last-child),
@@ -85,6 +130,14 @@
             }
         }
     }
+
+    @media screen and (max-width: $mobile-width) {
+        
+        .qr-code {
+            display: none;
+        }
+    }
+
 }
 
 .way-to-website {
@@ -144,6 +197,158 @@
 
     .content-description {
         border: 0;
+        font-family: 'psl_similanya_probold';   
     }
     
+}
+
+.head-category {
+    margin: 0;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    display: block;
+
+    .column {
+        background-color: #ffba00;
+        width: 48.8%;
+        flex: inherit;
+        border-radius: 2px;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+
+        .bg {
+            height: 10vh;
+            background-size: cover;
+            -moz-box-shadow:    inset 0 0 10px #000000;
+            -webkit-box-shadow: inset 0 0 10px #000000;
+            box-shadow:         inset 0 0 10px #000000;
+        }
+
+        h1 {
+            font-size: 20px;
+            text-align: center;
+            color: #000000;
+            margin-top: 5px;
+        }
+    }
+
+    @media screen and (min-width: $mobile-width) {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: $mobile-width) {
+    .home {
+        .way-to-website,
+        .blog-category {
+            display: none
+        }
+    }
+
+    .register {
+        .left {
+            .columns {
+                .columns {
+                    .is-half {
+                        padding: 20px 0;
+
+                        &:first-child {
+                            width: 40%;
+                        }
+
+                        &:last-child {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+
+            li {
+                font-size: 22px;
+                padding-left: 5px;
+            }
+
+            span {
+                font-size: 25px;
+            }
+
+            .bg {
+                height: 55px;
+            }
+        }
+    }
+    
+    .way-to-website {
+        .column {
+            width: 50% !important;
+        }
+    }
+}
+
+@media screen and (max-width: $mobile-small-width) { 
+    .register {
+        .left {
+            & > .is-mobile {
+                flex-direction: column;
+
+                .column {
+                    margin: 30px 0;
+                }
+            }
+        }
+    }
+
+    .way-to-website {
+        .is-mobile {
+            flex-direction: column;
+
+            .column {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: $mobile-min-width) {
+    .introduction {
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .mention {
+        .column {
+            width: 25%;
+        }
+    }
+
+    .register {
+        .left {
+            h4 {
+                font-size: 35px;
+            }
+
+            li {
+                font-size: 30px;
+            }
+
+            & > .columns {
+                margin: 10px 0;
+            }
+        }
+
+        .qr-code {
+            display: block;
+        }
+    }
+
+    .way-to-website {
+        .column {
+            width: 25% !important;
+        }
+    }
 }

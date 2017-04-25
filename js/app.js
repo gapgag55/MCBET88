@@ -1,1 +1,1 @@
-console.log("OK");
+var menuHeader=function(){function e(){i=document.getElementById("show-menu"),c=document.getElementById("close-menu"),t=i.parentElement,i.addEventListener("click",n),c.addEventListener("click",n)}function n(){t.classList.toggle("is-active")}var t,i,c;return{init:e}}();menuHeader.init();

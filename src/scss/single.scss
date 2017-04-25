@@ -1,11 +1,27 @@
 @import 'variable';
 
 
-.single {
-     & > p {
+.single-content {
+    position: relative;
+    overflow: inherit;
+
+    & > .bg {
+        width: 400px;
+        height: 400px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(25%, -50%);
+        background-size: contain;
+        z-index: 1;
+    }
+
+    & > p {
         margin-bottom: 30px;
         border-bottom: 1px solid #ffffff;
         display: inline-block;
+        position: relative;
+        z-index: 2;
     }
 
     .single-title {
@@ -15,5 +31,88 @@
     img {
         display: block;
         margin: 20px auto;
+    }
+}
+
+.single {
+    @media screen and (max-width: $mobile-width) {
+        .introduction, 
+        .register {
+            display: none;
+        }
+
+        .single-content {
+            & > .bg {
+                position: relative;
+                transform: inherit;
+                margin: 0 auto;
+            }
+
+            h1, p {
+                text-align: center;
+                border: 0;
+            }
+        }
+
+        .category {
+            .contents {
+                background-color: transparent !important;
+                padding: 0;
+                display: block !important;
+            }
+            
+            a {
+                display: flex !important;
+                width: 100% !important;
+                margin: 0;
+                justify-content: space-between;
+                flex: 1 !important;
+                padding: 0 !important;
+
+                .bg {
+                    height: 200px;
+                }
+
+                .column {
+                    flex: none !important;
+                    padding: 0;
+                }
+
+                .feature {
+                    width: 30% !important;
+                    padding: 20px !important;
+                    flex-basis: 30%;
+                    padding-left: 0 !important;
+
+                    span {
+                        display: none;
+                    }
+                }
+
+                .detail {
+                    width: 68% !important; 
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    h1 {
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $mobile-small-width) {
+        .category {
+            a {
+                display: block !important;
+
+                .feature,
+                .detail {
+                    width: 100% !important; 
+                }
+            }
+        }
     }
 }

@@ -13,6 +13,10 @@ h1, h4, h5, p {
     line-height: 1;
 }
 
+p {
+    font-family: 'psl_similanya_probold';
+}
+
 h1 {
     font-size: 40px;
     margin-bottom: 10px;
@@ -28,6 +32,10 @@ a {
     }
 }
 
+img {
+    display: block;
+}
+
 .text-center {
     text-align: center;
 }
@@ -40,6 +48,14 @@ a {
 
 .padding-30 {
     padding: 30px;
+
+    @media screen and (max-width: $mobile-width) {
+        padding: 20px;
+    }
+}
+
+.padding-20 {
+    padding: 20px;
 }
 
 .wrapper {
