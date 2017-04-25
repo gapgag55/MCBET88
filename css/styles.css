@@ -165,7 +165,8 @@ body {
   height: 100%;
   font-family: 'psl_similanyaextra_proregular';
   color: #ffffff;
-  font-size: 20px; }
+  font-size: 20px;
+  overflow: hidden; }
   body.fixed {
     position: fixed;
     top: 0;
@@ -679,7 +680,10 @@ header {
         color: #000000;
         float: right;
         padding-top: 20px;
-        padding-right: 40px; }
+        padding-right: 40px;
+        position: absolute;
+        right: 20px;
+        top: 10px; }
       header .left .menu-mobile ul {
         width: 100vw;
         height: 100vh;
